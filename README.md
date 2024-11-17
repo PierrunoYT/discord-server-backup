@@ -1,4 +1,4 @@
-# Discord Server Backup Bot
+# discord-server-backup
 
 A powerful Discord bot that safely creates and restores server configurations, helping server owners maintain backups of their server settings.
 
@@ -29,8 +29,8 @@ A powerful Discord bot that safely creates and restores server configurations, h
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
-cd discord-server-backup-bot
+git clone https://github.com/PierrunoYT/discord-server-backup.git
+cd discord-server-backup
 ```
 
 2. Install required dependencies:
