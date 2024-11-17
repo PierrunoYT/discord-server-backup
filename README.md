@@ -52,12 +52,32 @@ DISCORD_TOKEN=your_bot_token_here
    - Server Members Intent
    - Presence Intent
 4. Copy your bot token and paste it in the `.env` file
-5. Invite the bot to your server with the following permissions:
-   - Administrator
-   - View Channels
-   - Manage Roles
-   - Manage Channels
-   - Manage Emojis
+
+### Required Permissions and Scopes
+
+When inviting the bot to your server, make sure to include the following:
+
+#### Bot Permissions
+The bot requires the following permissions (total permission value: 8)
+- Administrator (Includes all permissions below)
+  - View Channels
+  - Manage Roles
+  - Manage Channels
+  - Manage Emojis and Stickers
+  - Read Message History
+  - Send Messages
+  - Manage Messages
+  - Attach Files
+  - Add Reactions
+
+#### Required Scopes
+- `bot` - Required to add the bot to servers
+- `applications.commands` - Required for slash command functionality
+
+You can use this pre-made invite URL format (replace YOUR_CLIENT_ID with your bot's client ID):
+```
+https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot%20applications.commands
+```
 
 ## Commands
 
